@@ -1,0 +1,125 @@
+
+<div class="body-skrollr">
+        <ul id="nav" data-0="" data-start="" data-end="10000">
+
+          
+        <!-- NAVBAR
+    ================================================== -->
+    <div class="cbp-af-header">
+      <div class="container">
+
+        <!-- Fixed navbar -->
+        <div class="navbar cbp-af-inner" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <h1><a class="navbar-brand scroll" href="#intro"><img src="img/logo.png" /></a></h1>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav pull-right">
+                <li><a href="#contact">Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+        </ul>
+        <!--placeholder div to prevent jumpy content when nav gets pinned-->
+        <div style="padding:1em;margin-left:500px;" data-0="" data-top-top="display:block;" data-anchor-target="#nav" data-edge-strategy="set">
+        </div>
+  <!-- div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
+  <div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -8000px;"></div>
+  <div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div -->
+
+  <!-- div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div -->
+
+  <!-- First Slide... Hello --> 
+  <div id="intro" data-0="left:0%;transform-origin:0 0;" data-12800="right:20%;">
+        <div id="slide1">
+          <div class="container" id="intro_hands">
+            <div class="row" style="">
+              <div id="" style="" class="carousel-caption-center colour-white">
+                
+                <h1>OUR TASKERS COLLECT THE LEADS</h1>
+                <p>You close the deals.</p>
+                <p><a class="btn btn-lg btn-primary scroll" href="#about" role="button">Try 100 Leads Free</a></p>
+                <h4>Try 100 of our leads free, no obligations, no credit card necessary.</h4>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+          
+  <!-- Slide 1 - Linx--> 
+  <div class="slide1" data-800="height:0%;bottom:0%;" data-1200="height:100%;bottom:0%;">
+
+  test
+
+  </div>
+ 
+  
+
+
+
+  <!-- Slide 2 - Mobilex--> 
+  <div class="slide2" data-2000="height:0%;bottom:0%;" data-2500="" data-3500="height:100%;bottom:0%;" data-9500="">
+    test2</div>
+
+
+
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="dist/skrollr.min.js"></script>
+
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="dist/skrollr.ie.min.js"></script>
+  <![endif]-->
+
+  <script type="text/javascript">
+  var s = skrollr.init({
+    forceHeight: true,
+    edgeStrategy: 'set',
+    easing: {
+      WTF: Math.random,
+      inverted: function(p) {
+        return 1-p;
+      }
+    },
+    easing: {
+      sin: function(p) {
+        return (Math.sin(p * Math.PI * 2 - Math.PI/2) + 1) / 2;
+      },
+      cos: function(p) {
+        return (Math.cos(p * Math.PI * 2 - Math.PI/2) + 1) / 2;
+      },
+    },
+    render: function(data) {
+      //Loop
+      if(data.curTop === data.maxTop) {
+        this.setScrollTop(0, true);
+      }
+    }
+
+  });
+  </script>
